@@ -1,0 +1,24 @@
+<resources>
+
+    <string name="app_name">TestGrability</string>
+
+    <!-- TODO: Errores -->
+    <string name="no_content">No se pudo cargar el contenido</string>
+    <string name="retry">Reintentar</string>
+    <string name="load_content">Contenido cargado</string>
+    <string name="no_connection">No tiene conexión</string>
+    <string name="yes_connection">Hay internet disponible</string>
+    <string name="try_again">Volver a intentarlo</string>
+    <string name="error_occurred">Ha ocurrido un error, intente de nuevo</string>
+    <string name="no_data_available">No hay datos disponibles</string>
+    <string name="detail">Detalles</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cumque dolor dolores id in libero nostrum quae? Atque laboriosam obcaecati optio pariatur perferendis placeat reprehenderit? Corporis fugit laborum nobis vero!</string>
+
+    <string name="textos_enviados">Textos enviados</string>
+    <string name="descripci_n">Descripción</string>
+
+</resources>

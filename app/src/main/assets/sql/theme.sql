@@ -1,0 +1,22 @@
+CREATE TABLE Theme(
+    id_aux INTEGER PRIMARY KEY AUTOINCREMENT,
+    banner_img VARCHAR(255),
+    submit_text_html TEXT,
+    id VARCHAR(60),
+    submit_tex TEXT,
+    display_name VARCHAR(100),
+    header_img TEXT,
+    description_html TEXT,
+    title TEXT VARCHAR(100),
+    icon_img TEXT,
+    header_title TEXT,
+    description TEXT,
+    subscribers VARCHAR(100),
+    submit_text_label TEXT,
+    lang TEXT,
+    key_color VARCHAR(10),
+    name VARCHAR(100),
+    created TEXT,
+    created_utc TEXT,
+    public_description TEXT
+);

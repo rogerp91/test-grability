@@ -1,0 +1,147 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:fillViewport="true"
+            android:padding="5dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:scaleType="centerCrop"
+                    tools:ignore="ContentDescription" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?colorPrimary"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/margen_estandar"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="@dimen/margen_estandar">
+
+                    <TextView
+                        android:id="@+id/name"
+                        style="@style/TextAppearance.AppCompat.Title.Inverse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:text="Trwerwerwer"
+                        android:textColor="@color/colorAccent"
+                        android:textIsSelectable="true" />
+
+                    <TextView
+                        android:id="@+id/date"
+                        style="@style/TextAppearance.AppCompat.Subhead.Inverse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Trwerwerwer"
+                        android:textColor="@color/colorAccent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="50"
+                    android:elevation="2dp"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        card_view:cardCornerRadius="@dimen/cardview_default_radius"
+                        card_view:cardElevation="@dimen/elevation_item_theme"
+                        card_view:contentPadding="8dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/margen_estandar"
+                            android:text="@string/descripci_n"
+                            android:textColor="@color/colorAccent"
+                            android:textIsSelectable="true"
+                            android:textSize="18sp" />
+
+                        <com.codesgood.views.JustifiedTextView
+                            android:id="@+id/description"
+                            style="@style/TextAppearance.AppCompat.Body1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:paddingBottom="@dimen/margen_estandar"
+                            android:textIsSelectable="true"
+                            android:textSize="16sp"
+                            tools:text="@string/lorem" />
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView xmlns:tools="http://schemas.android.com/tools"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        card_view:cardCornerRadius="@dimen/cardview_default_radius"
+                        card_view:cardElevation="@dimen/elevation_item_theme"
+                        card_view:cardUseCompatPadding="true"
+                        card_view:contentPadding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/margen_estandar"
+                            android:text="@string/textos_enviados"
+                            android:textColor="@color/colorAccent"
+                            android:textIsSelectable="true"
+                            android:textSize="18sp" />
+
+                        <com.codesgood.views.JustifiedTextView
+                            android:id="@+id/submit_text"
+                            style="@style/TextAppearance.AppCompat.Body1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:paddingBottom="@dimen/margen_estandar"
+                            android:textIsSelectable="true"
+                            android:textSize="14sp"
+                            tools:text="@string/lorem" />
+
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</FrameLayout>
